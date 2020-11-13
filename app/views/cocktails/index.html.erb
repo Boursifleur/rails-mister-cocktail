@@ -1,13 +1,27 @@
-<div class="container mt-3">
-  <div class="col-12">
+<div class="navbar py-2 navbar-cocktail">
+  <div class="logo">
+  <i class="fas fa-cocktail"></i>
+  </div>
+
+</div>
+<div class="container mt-3 d-block">
+  <div class="col-12 text-center pb-5">
     <h1>All our Cocktails</h1>
   </div>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
-    <div class="col-4">
-      <h4>  <%= link_to cocktail.name, cocktail_path(cocktail)%> </h4>
+    <div class="col-12 col-md-4 ">
+      <div class="boxcard">
+        <h4>  <%= link_to cocktail.name, cocktail_path(cocktail)%> </h4>
+      </div>
     </div>
     <% end %>
-    <%= link_to "add new cocktail", new_cocktail_path %>
   </div>
+
+<div class="button-cocktail">
+    <%= link_to "add new cocktail", new_cocktail_path %>
 </div>
+
+</div>
+
+

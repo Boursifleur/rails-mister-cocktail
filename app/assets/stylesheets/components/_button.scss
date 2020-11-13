@@ -1,0 +1,32 @@
+.button-cocktail {
+  border: #000 solid 1px;
+  width: 200px;
+  margin: auto;
+  padding: 20px 25px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+
+.button-cocktail a {
+ text-decoration: none;
+ text-transform: uppercase;
+ color: #000;
+ font-size: 0.8em;
+ transition: 0.3s all ease-in-out;
+}
+
+.button-cocktail:hover {
+  background: rgba(0,0,0,0.9);
+  transition: 0.3s all ease-in-out;
+}
+
+.button-cocktail:hover a {
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+}
+
+
+body {
+  background-color: #f4f1de;
+}
