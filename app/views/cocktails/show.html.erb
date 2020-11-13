@@ -1,4 +1,13 @@
-<h4> <%= @cocktail.name %> </h4>
+<div class="navbar-cocktail py-1 mb-3">
+  <div class="logo">
+  <i class="fas fa-cocktail size fa-2x"></i>
+  </div>
+</div>
+<div class="container h-200 w200">
+
+  <h4> <%= @cocktail.name %> </h4>
+
+<%= cl_image_tag @cocktail.photo.key, alt: "alttext" %>
 
 <% @cocktail.doses.each do |dose| %>
 <p> <%= dose.description %> <%= link_to "Destroy", dose_path(dose), method: :delete, data: { confirm: "Are you sure?"}   %> de <%= dose.ingredient.name%>  </p>
@@ -7,4 +16,7 @@
 <%= link_to "Add a new dose", new_cocktail_dose_path(@cocktail) %>
 
 <%= link_to "Back to all cocktails", cocktails_path %>
+
+</div>
+
 
