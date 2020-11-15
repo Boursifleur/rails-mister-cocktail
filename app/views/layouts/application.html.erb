@@ -13,18 +13,21 @@
 
   <body>
     <div class="container-fluid p-0">
+      <div class="navbar-cocktail py-1 mb-3">
+        <%= link_to cocktails_path do %>
+           <i class="fas fa-cocktail size fa-2x opacity-(0-5)"></i>
+        <% end  %>
+      </div>
       <%= yield %>
-
-      <div class="footer">
+      <div class="footer mt-3">
          <div class="footer-links">
             <a href="https://www.instagram.com/patricksebastienofficiel/?hl=fr" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://www.facebook.com/fan-de-carlos-104818162938421/"target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="https://twitter.com/brasseursfrance?lang=fr"target="_blank"><i class="fab fa-twitter"></i></a>
           </div>
-      <div class="footer-copyright">
-      This footer is made with <i class="fas fa-beer"> </i> at Le Perchoir
+        <div class="footer-copyright">
+        This footer is made with <i class="fas fa-beer"> </i> at Le Perchoir
+        </div>
       </div>
-    </div>
-
   </body>
 </html>

@@ -1,5 +1,5 @@
 .footer {
-  background: #eddcd2;
+  background: #fec89a;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -8,6 +8,7 @@
   color: rgba(0,0,0,0.3);
   bottom: 0;
   width: 100%;
+  border-bottom: thin rgba(0,0,0,0.9);
 }
 .footer-links {
   display: flex;
